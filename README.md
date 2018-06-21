@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 50 pkt
+## Obecne punkty: 80 pkt
 
 ## Do Zrobienia:
 
@@ -14,7 +14,7 @@
 a) w pamięci urządzenia, 10pkt  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
 c) z pamięci zewnętrznej (karta SD) 20pkt  
-### 8. Dostęp do bazy danych (sqlite), 20pkt
+~~### 8. Dostęp do bazy danych (sqlite), 20pkt~~  
 ### 9. Dostęp do serwisów web  
 a) za pomocą technologii REST 20pkt  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
@@ -43,7 +43,7 @@ a) LinearLayout 10pkt
 b) RelativeLayout 10pkt  
 c) FrameLayout 10pkt  
 ~~d) GridLayout 10pkt~~  
-e) TableLayout 10pkt  
+~~e) TableLayout 10pkt~~  
 f) ConstraintLayout 10pkt
 ### 21. Implementacja Listenerów (3 różne podejścia) 30 pkt.
 ### 22. Wykorzystanie DataAdpater'a (ListView, ListView, Spinner, GridView) 40 pkt.
