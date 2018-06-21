@@ -1,7 +1,7 @@
 # Android_AA_TK
 Project for Android classes
 
-TODO:
+Do Zrobienia:
 
 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt
 2. Implementacja kilku aktywności, 20pkt
