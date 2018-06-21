@@ -6,15 +6,15 @@
 
 ### 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt
 ### 2. Implementacja kilku aktywności, 20pkt
-### 3. Wykorzystanie Shared Preferences 10pkt
+### 3. Wykorzystanie Shared Preferences, 10pkt
 ### 4. Zmiana orientacji urządzenia, 10pkt
-### 5. Aplikacja dla różnych rozdzielczości,10pkt
-### 6. Wykorzystanie fragmentów20pkt
+### 5. Aplikacja dla różnych rozdzielczości, 10pkt
+### 6. Wykorzystanie fragmentów 20pkt
 ### 7. Pliki  
 a) w pamięci urządzenia, 10pkt  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
 c) z pamięci zewnętrznej (karta SD) 20pkt  
-### 8. Dostęp do bazy danych (sqlite) 20pkt
+### 8. Dostęp do bazy danych (sqlite), 20pkt
 ### 9. Dostęp do serwisów web  
 a) za pomocą technologii REST 20pkt  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
