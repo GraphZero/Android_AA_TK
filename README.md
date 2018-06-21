@@ -4,6 +4,7 @@
 
 ## Do Zrobienia:
 
+
 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt
 2. Implementacja kilku aktywności, 20pkt
 3. Wykorzystanie Shared Preferences, 10pkt
