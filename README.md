@@ -47,7 +47,7 @@ c) FrameLayout 10pkt
 ~~d) GridLayout 10pkt~~  
 ~~e) TableLayout 10pkt~~  
 f) ConstraintLayout 10pkt  
-21. Implementacja Listenerów (3 różne podejścia) 30 pkt.
+21. Implementacja Listenerów (3 różne podejścia) 30 pkt.  
 22. Wykorzystanie DataAdpater'a (ListView, ListView, Spinner, GridView) 40 pkt.  
 23. Widżety  
 ~~a) Buttons 10pkt~~  
