@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 0
+## Obecne punkty: 50 pkt
 
 ## Do Zrobienia:
 
@@ -42,14 +42,14 @@ b) do plików (dla Android 26) 20pkt
 a) LinearLayout 10pkt  
 b) RelativeLayout 10pkt  
 c) FrameLayout 10pkt  
-d) GridLayout 10pkt  
+~~d) GridLayout 10pkt  ~~
 e) TableLayout 10pkt  
 f) ConstraintLayout 10pkt
 ### 21. Implementacja Listenerów (3 różne podejścia) 30 pkt.
 ### 22. Wykorzystanie DataAdpater'a (ListView, ListView, Spinner, GridView) 40 pkt.
 ### 23. Widżety  
-a) Buttons 10pkt  
-b) TextView/TextEdit 10pkt  
+~~a) Buttons 10pkt~~  
+~~b) TextView/TextEdit 10pkt~~
 c) AutoCompleteTextView 20pkt  
 d) Icons 10pkt  
 e) ImageView 10pkt  
@@ -58,5 +58,5 @@ g) RadioButtons 10pkt
 h) ScrollView 10pkt  
 i) ViewGrid 20pkt  
 j) ListView 20pkt  
-k) Spinner 20pkt  
+~~k) Spinner 20pkt~~
 l) GridView 20pkt  
