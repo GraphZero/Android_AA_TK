@@ -14,7 +14,7 @@
 a) w pamięci urządzenia, 10pkt  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
 c) z pamięci zewnętrznej (karta SD) 20pkt  
-~~ 8. Dostęp do bazy danych (sqlite), 20pkt~~  
+~~8. Dostęp do bazy danych (sqlite), 20pkt~~  
 9. Dostęp do serwisów web  
 a) za pomocą technologii REST 20pkt  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
