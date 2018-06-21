@@ -20,11 +20,11 @@ c) z pamięci zewnętrznej (karta SD) 20pkt
 9. Dostęp do serwisów web  
 a) za pomocą technologii REST 20pkt  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
-10. Wykorzystanie formatu XML do kodowania danych 20pkt
-11. Uruchomienie serwisów w Androidzie 20pkt
-12. Wykorzystanie Notyfikacji 20pkt
-13. Wykorzystanie Filtrów 10pkt
-14. Użycie dostarczyciela treści (provider) 20pkt
+10. Wykorzystanie formatu XML do kodowania danych 20pkt  
+11. Uruchomienie serwisów w Androidzie 20pkt  
+12. Wykorzystanie Notyfikacji 20pkt  
+13. Wykorzystanie Filtrów 10pkt  
+14. Użycie dostarczyciela treści (provider) 20pkt  
 15. Wykorzystanie zewnętrznych urządzeń  
 a) GPS 20pkt  
 b) czujnik temperatury 20pkt  
