@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 50 pkt
+## Obecne punkty: 30 pkt
 
 ## Do Zrobienia:
 
@@ -58,5 +58,5 @@ g) RadioButtons 10pkt
 h) ScrollView 10pkt  
 i) ViewGrid 20pkt  
 j) ListView 20pkt  
-~~k) Spinner 20pkt~~  
+k) Spinner 20pkt  
 l) GridView 20pkt  
