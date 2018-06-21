@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">pmanager</string>
+    <string name="app_name">PManager</string>
+    <string-array name="roles_array">
+        <item>Admin</item>
+        <item>User</item>
+        <item>Manager</item>
+    </string-array>
 </resources>
