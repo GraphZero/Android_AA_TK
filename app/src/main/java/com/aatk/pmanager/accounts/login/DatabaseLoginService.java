@@ -12,6 +12,7 @@ import com.aatk.pmanager.main.HomeActivity;
 public class DatabaseLoginService implements UserValidator {
     private UserDao userDao;
     private Context context;
+    public static String actualUser;
 
     public DatabaseLoginService(Context context) {
         this.context = context;
@@ -23,6 +24,8 @@ public class DatabaseLoginService implements UserValidator {
         @Override
         protected Boolean doInBackground(String... params)
         {
+            //do stuff and return the value you want
+            actualUser = params[0];
             //do stuff and return the value you want\
             if ( params.length < 2 ){
                 return false;
@@ -52,6 +55,7 @@ public class DatabaseLoginService implements UserValidator {
     private void validateUser(Boolean result){
         if (result){
             Intent intent = new Intent(context, HomeActivity.class);
+            intent.putExtra("userName", actualUser);
             context.startActivity(intent);
         }
     }

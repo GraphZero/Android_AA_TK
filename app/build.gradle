@@ -29,6 +29,13 @@ dependencies {
     compile 'android.arch.persistence.room:runtime:1.1.1'
     annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
     compile 'com.squareup.retrofit2:retrofit:2.4.0'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.12-b140109.1041'
+
+    //
+    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.5"
+    compile group: 'javax.xml.stream', name: 'stax-api', version: '1.0-2'
+
+
 }
 
 

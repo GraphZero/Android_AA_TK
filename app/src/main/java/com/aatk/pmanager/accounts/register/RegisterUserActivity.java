@@ -81,8 +81,9 @@ public class RegisterUserActivity extends AppCompatActivity {
     }
 
     private void goToHomeActivity() {
+        System.out.println("I AM HERE");
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("userName", usernameEditText.getText().toString());
         startActivity(intent);
     }
-
 }
