@@ -13,7 +13,6 @@ import com.aatk.pmanager.accounts.login.DatabaseLoginService;
 import com.aatk.pmanager.accounts.login.UserValidator;
 import com.aatk.pmanager.accounts.register.RegisterUserActivity;
 import com.aatk.pmanager.accounts.repository.UserDatabase;
-import com.aatk.pmanager.main.HomeActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -26,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText usernameEditText;
     private EditText passwordEditText;
     private UserValidator userValidator;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,5 +83,4 @@ public class MainActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString();
         userValidator.validateUser(username, password);
     }
-
 }

@@ -1,6 +1,5 @@
 package com.aatk.pmanager.accounts.login;
 
-import android.content.Context;
 
 /**
  * Used to validate user
