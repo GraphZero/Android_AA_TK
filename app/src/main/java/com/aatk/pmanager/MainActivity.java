@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private UserValidator userValidator;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

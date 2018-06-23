@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 
 import com.aatk.pmanager.MainActivity;
+import com.aatk.pmanager.accounts.domain.User;
 import com.aatk.pmanager.accounts.repository.UserDao;
 import com.aatk.pmanager.main.HomeActivity;
 
@@ -22,8 +23,16 @@ public class DatabaseLoginService implements UserValidator {
         @Override
         protected Boolean doInBackground(String... params)
         {
-            //do stuff and return the value you want
-            return userDao.findByUsername(params[0]).getPassword().equals(params[1]);
+            //do stuff and return the value you want\
+            if ( params.length < 2 ){
+                return false;
+            }
+            User user = userDao.findByUsername(params[0]);
+            if ( user != null ){
+                return user.getPassword().equals(params[1]);
+            } else{
+                return false;
+            }
         }
 
         @Override
