@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 230 pkt
+## Obecne punkty: 240 pkt
 
 ## Do Zrobienia:
 
