@@ -11,7 +11,7 @@ public class Quote {
     private String title;
 
     @SerializedName("content")
-    private String modelMakeId;
+    private String content;
 
     @SerializedName("link")
     private String link;
@@ -37,10 +37,10 @@ public class Quote {
         }
     }
 
-    public Quote(int id, String title, String modelMakeId, String link, CustomMeta customMeta) {
+    public Quote(int id, String title, String content, String link, CustomMeta customMeta) {
         this.id = id;
         this.title = title;
-        this.modelMakeId = modelMakeId;
+        this.content = content;
         this.link = link;
         this.customMeta = customMeta;
     }
@@ -53,8 +53,8 @@ public class Quote {
         return title;
     }
 
-    public String getModelMakeId() {
-        return modelMakeId;
+    public String getContent() {
+        return content;
     }
 
     public String getLink() {
@@ -70,7 +70,7 @@ public class Quote {
         return "Quote{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", modelMakeId='" + modelMakeId + '\'' +
+                ", content='" + content + '\'' +
                 ", link='" + link + '\'' +
                 ", customMeta=" + customMeta +
                 '}';

@@ -19,6 +19,7 @@ public class QuotesCheckerService {
     private QuotesRESTService quotesRESTService;
     private QuotesCheckerActivity context;
     private List<Quote> quotes;
+    private int quoteToAdd = 0;
 
     public QuotesCheckerService(QuotesCheckerActivity context) {
         this.context = context;
@@ -34,13 +35,21 @@ public class QuotesCheckerService {
         @Override
         protected List<Quote> doInBackground(String... params)
         {
-            List<Quote> quotes;
             try {
                 Log.i(TAG, quotesRESTService.listQuotes().request().toString());
-                quotes = quotesRESTService
-                        .listQuotes()
-                        .execute()
-                        .body();
+                if ( quotes == null || quotes.size() == 0 ){
+                    quotes = quotesRESTService
+                            .listQuotes()
+                            .execute()
+                            .body();
+                } else{
+                    quotes.add(quotesRESTService
+                            .listQuotes()
+                            .execute()
+                            .body()
+                            .get(0));
+                }
+
             } catch (JsonSyntaxException | IOException e ) {
                 Log.i(TAG, "getAsyncCarModelsByManufacturer: couldnt get response " + e.getMessage());
                 e.printStackTrace();
@@ -52,7 +61,8 @@ public class QuotesCheckerService {
         @Override
         protected void onPostExecute(List<Quote> result) {
             quotes = result;
-            context.initializeQuotes();
+            context.addQuote(quotes.get(quoteToAdd));
+            quoteToAdd++;
             Log.i(TAG, "onClick: " + quotes.get(0) );
         }
     }
