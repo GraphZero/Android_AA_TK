@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 170 pkt
+## Obecne punkty: 190 pkt
 
 ## Do Zrobienia:
 
@@ -17,7 +17,7 @@ b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 2
 ~~c) z pamięci zewnętrznej (karta SD) 20pkt~~  
 ~~8. Dostęp do bazy danych (sqlite), 20pkt~~  
 9. Dostęp do serwisów web  
-a) za pomocą technologii REST 20pkt  
+~~a) za pomocą technologii REST 20pkt~~  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
 ~~10. Wykorzystanie formatu XML do kodowania danych 20pkt~~  
 11. Uruchomienie serwisów w Androidzie 20pkt  
