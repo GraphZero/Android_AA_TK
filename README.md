@@ -7,7 +7,7 @@
 
 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt
 2. Implementacja kilku aktywności, 20pkt
-3. Wykorzystanie Shared Preferences, 10pkt
+3. ~~Wykorzystanie Shared Preferences, 10pkt~~
 4. Zmiana orientacji urządzenia, 10pkt
 5. Aplikacja dla różnych rozdzielczości, 10pkt
 6. Wykorzystanie fragmentów 20pkt
