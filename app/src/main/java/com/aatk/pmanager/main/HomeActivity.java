@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.aatk.pmanager.MainActivity;
 import com.aatk.pmanager.R;
 import com.aatk.pmanager.accounts.repository.UserDao;
+import com.aatk.pmanager.quotes.QuotesCheckerActivity;
 import com.aatk.pmanager.db.Users;
 import com.aatk.pmanager.service.XMLWriter;
 
@@ -37,7 +38,7 @@ public class HomeActivity extends AppCompatActivity{
     private Users userList;
     private String actualCar;
     private Button carAdder;
-
+    private Button carCheckerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class HomeActivity extends AppCompatActivity{
         userDao = MainActivity.userDatabase.userDao();
         user = getIntent().getStringExtra("userName");
         carAdder = (Button)findViewById(R.id.carAdder);
+
         carAdder.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -61,12 +63,26 @@ public class HomeActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
         xmlWriter = new XMLWriter();
         userList = new Users();
         //CarAdder - button do dodania samochodu w razie, gdy go nie ma
         actualCar = findCar();
         fillCarAdder();
         insertUsers();
+        initializeCarCheckerButton();
+    }
+
+    private void initializeCarCheckerButton(){
+        carCheckerButton = findViewById(R.id.checkCar);
+        carCheckerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, QuotesCheckerActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void fillCarAdder(){
