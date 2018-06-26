@@ -54,7 +54,7 @@ f) ConstraintLayout 10pkt
 c) AutoCompleteTextView 20pkt  
 d) Icons 10pkt  
 e) ImageView 10pkt  
-~~ f) CheckBoxes 10pkt~~  
+~~f) CheckBoxes 10pkt~~  
 g) RadioButtons 10pkt  
 h) ScrollView 10pkt  
 i) ViewGrid 20pkt  
