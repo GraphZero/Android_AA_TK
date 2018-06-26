@@ -1,12 +1,12 @@
 # Android_AA_TK
 
-## Obecne punkty: 320 pkt
+## Obecne punkty: 340 pkt
 
 ## Do Zrobienia:
 
 
 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt  
-2. Implementacja kilku aktywności, 20pkt  
+2. ~~Implementacja kilku aktywności, 20pkt~~    
 3. ~~Wykorzystanie Shared Preferences, 10pkt~~  
 4. Zmiana orientacji urządzenia, 10pkt  
 5. Aplikacja dla różnych rozdzielczości, 10pkt  
