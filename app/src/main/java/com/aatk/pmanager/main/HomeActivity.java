@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.aatk.pmanager.MainActivity;
@@ -18,6 +20,7 @@ import com.aatk.pmanager.accounts.repository.UserDao;
 import com.aatk.pmanager.db.MyFragment;
 import com.aatk.pmanager.quotes.QuotesCheckerActivity;
 import com.aatk.pmanager.db.Users;
+import com.aatk.pmanager.service.MusicService;
 import com.aatk.pmanager.service.XMLHelper;
 import com.aatk.pmanager.service.XMLWriter;
 
@@ -34,16 +37,19 @@ import java.util.concurrent.ExecutionException;
 
 public class HomeActivity extends AppCompatActivity implements MyFragment.Callback{
     private static final String TAG = "Home Activity";
-    private UserDao userDao;
-    private TextView userName;
-    private TextView carName;
-    private String user;
-    private XMLWriter xmlWriter;
-    private Users userList;
-    private String actualCar;
     private Button carAdder;
     private Button carCheckerButton;
     private Button ownersContact;
+    private CheckBox musicCheckBox;
+    private TextView userName;
+    private TextView carName;
+
+    private UserDao userDao;
+    private XMLWriter xmlWriter;
+    private Users userList;
+    private String user;
+    private String actualCar;
+    private MusicService musicService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +61,7 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
     }
 
     private void initializeObjects(){
+        //this.musicService = new MusicService();
         carName = (TextView) findViewById(R.id.carName);
         userDao = MainActivity.userDatabase.userDao();
         user = getIntent().getStringExtra("userName");
@@ -72,6 +79,14 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
         userList = new Users();
         //CarAdder - button do dodania samochodu w razie, gdy go nie ma
         actualCar = findCar();
+        musicCheckBox = findViewById(R.id.checkBox);
+
+        musicCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                manageMusic(b);
+            }
+        });
         fillCarAdder();
         insertUsers();
         initializeCarCheckerButton();
@@ -168,6 +183,16 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
         else{
             Log.w(TAG, "The file doesn't exist. Creating new file...");
             return false;
+        }
+    }
+
+    private void manageMusic(boolean isChecked){
+        if ( isChecked ){
+            Log.i(TAG, "manageMusic: checked");
+            startService(new Intent(this, MusicService.class));
+        } else{
+            Log.i(TAG, "manageMusic: unchecked");
+            stopService(new Intent(this, MusicService.class));
         }
     }
 

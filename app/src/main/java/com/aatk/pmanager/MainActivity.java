@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button loginButton;
     private Button registerButton;
+
+
     private EditText usernameEditText;
     private EditText passwordEditText;
     private UserValidator userValidator;

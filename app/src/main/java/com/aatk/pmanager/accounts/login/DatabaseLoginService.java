@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.aatk.pmanager.MainActivity;
 import com.aatk.pmanager.accounts.domain.User;
@@ -48,7 +49,6 @@ public class DatabaseLoginService implements UserValidator {
         @Override
         protected void onPostExecute(Boolean result)
         {
-            // Call activity method with results
             validateUser(result);
         }
     }
@@ -66,8 +66,14 @@ public class DatabaseLoginService implements UserValidator {
             saveUserData();
             Intent intent = new Intent(context, HomeActivity.class);
             intent.putExtra("userName", actualUser);
+            showToast();
             context.startActivity(intent);
         }
+    }
+
+    private void showToast(){
+        Toast toast = Toast.makeText(context, "Hello " + actualUser, Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     private void saveUserData() {
