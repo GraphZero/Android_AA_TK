@@ -5,12 +5,12 @@
 ## Do Zrobienia:
 
 
-1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt
-2. Implementacja kilku aktywności, 20pkt
-3. ~~Wykorzystanie Shared Preferences, 10pkt~~
-4. Zmiana orientacji urządzenia, 10pkt
-5. Aplikacja dla różnych rozdzielczości, 10pkt
-~~6. Wykorzystanie fragmentów 20pkt~~
+1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt  
+2. Implementacja kilku aktywności, 20pkt  
+3. ~~Wykorzystanie Shared Preferences, 10pkt~~  
+4. Zmiana orientacji urządzenia, 10pkt  
+5. Aplikacja dla różnych rozdzielczości, 10pkt  
+~~6. Wykorzystanie fragmentów 20pkt~~  
 7. Pliki  
 ~~a) w pamięci urządzenia, 10pkt~~  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
@@ -20,7 +20,7 @@ b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 2
 ~~a) za pomocą technologii REST 20pkt~~  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
 10. ~~Wykorzystanie formatu XML do kodowania danych 20pkt~~  
-11. ~~ Uruchomienie serwisów w Androidzie 20pkt ~~
+11. ~~ Uruchomienie serwisów w Androidzie 20pkt ~~  
 12. Wykorzystanie Notyfikacji 20pkt  
 13. Wykorzystanie Filtrów 10pkt  
 14. Użycie dostarczyciela treści (provider) 20pkt  
@@ -33,7 +33,7 @@ e) czytnik linii papilarnych 20pkt
 f) inne 20pkt  
 16. Odtwarzanie multimediów
 a) video 10pkt
-~~ b) muzyki 10pkt~~
+~~b) muzyki 10pkt~~  
 ~~17. Wykorzystanie sms'ów 20pkt~~  
 18. Nawiązywanie połączenia telefonicznego 20pkt  
 19. Obsługa praw dostępu  
@@ -54,7 +54,7 @@ f) ConstraintLayout 10pkt
 c) AutoCompleteTextView 20pkt  
 d) Icons 10pkt  
 e) ImageView 10pkt  
-~~ f) CheckBoxes 10pkt~~
+~~ f) CheckBoxes 10pkt~~  
 g) RadioButtons 10pkt  
 h) ScrollView 10pkt  
 i) ViewGrid 20pkt  
