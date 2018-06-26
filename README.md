@@ -31,8 +31,8 @@ c) czujnik temperatury 20pkt
 d) czujnik światła 20pkt  
 e) czytnik linii papilarnych 20pkt  
 f) inne 20pkt  
-16. Odtwarzanie multimediów
-a) video 10pkt
+16. Odtwarzanie multimediów  
+a) video 10pkt  
 ~~b) muzyki 10pkt~~  
 ~~17. Wykorzystanie sms'ów 20pkt~~  
 18. Nawiązywanie połączenia telefonicznego 20pkt  
