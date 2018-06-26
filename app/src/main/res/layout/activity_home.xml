@@ -16,8 +16,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <TextView
@@ -53,7 +55,17 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="36dp"
+            android:onClick="changeActivity"
             android:text="Get Motivation Boost" />
+
+        <Button
+            android:id="@+id/ownersContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-184dp"
+            android:text="Contact car owners" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

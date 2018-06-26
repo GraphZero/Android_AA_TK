@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aatk.pmanager">
-
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-feature android:name="android.hardware.telephony"
+        android:required="true"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +26,11 @@
         <activity android:name=".main.HomeActivity" />
         <activity android:name=".accounts.register.RegisterUserActivity" />
         <activity android:name=".main.CarInputActivity" />
-        <activity android:name=".quotes.QuotesCheckerActivity"></activity>
+        <activity android:name=".quotes.QuotesCheckerActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

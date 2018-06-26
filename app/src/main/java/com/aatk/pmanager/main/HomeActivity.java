@@ -1,6 +1,7 @@
 package com.aatk.pmanager.main;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +12,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.aatk.pmanager.MainActivity;
+import com.aatk.pmanager.MessageActivity;
 import com.aatk.pmanager.R;
 import com.aatk.pmanager.accounts.repository.UserDao;
+import com.aatk.pmanager.db.MyFragment;
 import com.aatk.pmanager.quotes.QuotesCheckerActivity;
 import com.aatk.pmanager.db.Users;
+import com.aatk.pmanager.service.XMLHelper;
 import com.aatk.pmanager.service.XMLWriter;
 
 import java.io.BufferedReader;
@@ -28,8 +32,8 @@ import java.util.concurrent.ExecutionException;
  * This is home activity.
  */
 
-public class HomeActivity extends AppCompatActivity{
-    private static final String TAG = "HomeActivity";
+public class HomeActivity extends AppCompatActivity implements MyFragment.Callback{
+    private static final String TAG = "Home Activity";
     private UserDao userDao;
     private TextView userName;
     private TextView carName;
@@ -39,6 +43,7 @@ public class HomeActivity extends AppCompatActivity{
     private String actualCar;
     private Button carAdder;
     private Button carCheckerButton;
+    private Button ownersContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,16 +59,15 @@ public class HomeActivity extends AppCompatActivity{
         userDao = MainActivity.userDatabase.userDao();
         user = getIntent().getStringExtra("userName");
         carAdder = (Button)findViewById(R.id.carAdder);
-
-        carAdder.setOnClickListener(new View.OnClickListener(){
+        ownersContact = (Button) findViewById(R.id.ownersContact);
+        ownersContact.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(HomeActivity.this, CarInputActivity.class);
-                intent.putExtra("username", user);
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
-
+        onButtonClicked();
         xmlWriter = new XMLWriter();
         userList = new Users();
         //CarAdder - button do dodania samochodu w razie, gdy go nie ma
@@ -75,14 +79,11 @@ public class HomeActivity extends AppCompatActivity{
 
     private void initializeCarCheckerButton(){
         carCheckerButton = findViewById(R.id.checkCar);
-        carCheckerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, QuotesCheckerActivity.class);
-                startActivity(intent);
-            }
-        });
+    }
 
+    public void changeActivity(View v){
+        Intent intent = new Intent(HomeActivity.this, QuotesCheckerActivity.class);
+        startActivity(intent);
     }
 
     private void fillCarAdder(){
@@ -95,23 +96,7 @@ public class HomeActivity extends AppCompatActivity{
     }
 
     private String findCar(){
-        File sdCardDirectory = Environment.getExternalStorageDirectory();
-        File file = new File(sdCardDirectory + "/cars.txt");
-        try{
-            if (file.exists()) {
-                String carLine = findCarForUser(file);
-                if (carLine != null){
-                    return carLine;
-                }
-            }
-            else {
-                file.createNewFile();
-            }
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
-        return "undefined";
+        return XMLHelper.findCar(user);
     }
 
     private String findCarForUser(File file){
@@ -184,5 +169,17 @@ public class HomeActivity extends AppCompatActivity{
             Log.w(TAG, "The file doesn't exist. Creating new file...");
             return false;
         }
+    }
+
+    @Override
+    public void onButtonClicked() {
+        carAdder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, CarInputActivity.class);
+                intent.putExtra("username", user);
+                startActivity(intent);
+            }
+        });
     }
 }

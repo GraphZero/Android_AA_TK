@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 240 pkt
+## Obecne punkty: 280 pkt
 
 ## Do Zrobienia:
 
@@ -10,9 +10,9 @@
 3. ~~Wykorzystanie Shared Preferences, 10pkt~~
 4. Zmiana orientacji urządzenia, 10pkt
 5. Aplikacja dla różnych rozdzielczości, 10pkt
-6. Wykorzystanie fragmentów 20pkt
+~~6. Wykorzystanie fragmentów 20pkt~~
 7. Pliki  
-~~a) w pamięci urządzenia, 10pkt~~
+~~a) w pamięci urządzenia, 10pkt~~  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
 ~~c) z pamięci zewnętrznej (karta SD) 20pkt~~  
 ~~8. Dostęp do bazy danych (sqlite), 20pkt~~  
@@ -34,7 +34,7 @@ f) inne 20pkt
 16. Odtwarzanie multimediów  
 a) video 10pkt  
 b) muzyki 10pkt  
-17. Wykorzystanie sms'ów 20pkt  
+~~17. Wykorzystanie sms'ów 20pkt~~  
 18. Nawiązywanie połączenia telefonicznego 20pkt  
 19. Obsługa praw dostępu  
 a) do sieci (dla Android 26) 20pkt  

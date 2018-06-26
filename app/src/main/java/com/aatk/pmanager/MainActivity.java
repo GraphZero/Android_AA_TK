@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String PREFERENCES_NAME = "myPreferences";
     private static final String PREFERENCES_USERNAME = "username";
     private static final String PREFERENCES_PASSWORD = "password";
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "Main Activity";
 
     private boolean areDatabasesSet = false;
     public static UserDatabase userDatabase;
