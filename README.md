@@ -45,7 +45,7 @@ b) do plików (dla Android 26) 20pkt
 c) FrameLayout 10pkt  
 ~~d) GridLayout 10pkt~~  Andrzej Adamski, Timur Karimov  
 ~~e) TableLayout 10pkt~~  Andrzej Adamski  
-~~f) ConstraintLayout 10pkt~~
+~~f) ConstraintLayout 10pkt~~  Andrzej Adamski, Timur Karimov  
 ~~21. Implementacja Listenerów (3 różne podejścia) 30 pkt.~~ Timur Karimov, Andrzej Adamski  
 22. ~~Wykorzystanie DataAdpater'a (ListView, ListView, Spinner, GridView) 40 pkt.~~  Andrzej Adamski  
 23. Widżety  
