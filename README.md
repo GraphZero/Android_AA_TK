@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 280 pkt
+## Obecne punkty: 300 pkt
 
 ## Do Zrobienia:
 
@@ -20,7 +20,7 @@ b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 2
 ~~a) za pomocą technologii REST 20pkt~~  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
 10. ~~Wykorzystanie formatu XML do kodowania danych 20pkt~~  
-11. Uruchomienie serwisów w Androidzie 20pkt  
+11. ~~ Uruchomienie serwisów w Androidzie 20pkt ~~
 12. Wykorzystanie Notyfikacji 20pkt  
 13. Wykorzystanie Filtrów 10pkt  
 14. Użycie dostarczyciela treści (provider) 20pkt  
@@ -31,9 +31,9 @@ c) czujnik temperatury 20pkt
 d) czujnik światła 20pkt  
 e) czytnik linii papilarnych 20pkt  
 f) inne 20pkt  
-16. Odtwarzanie multimediów  
-a) video 10pkt  
-b) muzyki 10pkt  
+16. Odtwarzanie multimediów
+a) video 10pkt
+~~ b) muzyki 10pkt~~
 ~~17. Wykorzystanie sms'ów 20pkt~~  
 18. Nawiązywanie połączenia telefonicznego 20pkt  
 19. Obsługa praw dostępu  
@@ -54,7 +54,7 @@ f) ConstraintLayout 10pkt
 c) AutoCompleteTextView 20pkt  
 d) Icons 10pkt  
 e) ImageView 10pkt  
-f) CheckBoxes 10pkt  
+~~ f) CheckBoxes 10pkt~~  
 g) RadioButtons 10pkt  
 h) ScrollView 10pkt  
 i) ViewGrid 20pkt  
