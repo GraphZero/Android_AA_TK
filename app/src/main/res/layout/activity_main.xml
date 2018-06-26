@@ -23,7 +23,7 @@
             android:layout_width="222dp"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="Welcome To Our Android Project"
+            android:text="Welcome to ParManager"
             android:textSize="24sp" />
 
         <TextView

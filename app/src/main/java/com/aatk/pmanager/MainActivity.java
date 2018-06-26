@@ -1,9 +1,13 @@
 package com.aatk.pmanager;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,10 +37,12 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private UserValidator userValidator;
     private SharedPreferences preferences;
+    private NotificationManager notificationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.AppTheme);
         setContentView(R.layout.activity_main);
         setUpDatabases();
         setUpComponents();
@@ -57,6 +63,21 @@ public class MainActivity extends AppCompatActivity {
     private void setUpComponents(){
         setUpButtons();
         setUpEditTexts();
+        setUpNotificationManager();
+    }
+
+    public void setUpNotificationManager(){
+        notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        final Intent emptyIntent = new Intent();
+        PendingIntent pIntent = PendingIntent.getActivity(getApplicationContext(), 1, emptyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+// build notification
+// the addAction re-use the same intent to keep the example short
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(this)
+                        .setContentTitle("My notification")
+                        .setContentText("Hello World!")
+                        .setContentIntent(pIntent); //Required on Gingerbread and below
     }
 
     private void setUpButtons(){

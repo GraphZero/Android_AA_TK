@@ -1,5 +1,7 @@
 package com.aatk.pmanager;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +26,7 @@ public class MessageActivity extends AppCompatActivity {
     private TextView telNumber;
     private EditText smsText;
     private Button sendButton;
+    private Button callButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,13 @@ public class MessageActivity extends AppCompatActivity {
 
     private void initializeObjects(){
         userNameToWrite = (EditText) findViewById(R.id.receiverName);
+        callButton = (Button) findViewById(R.id.callButton);
+        callButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                dialNumber(telNumber.getText().toString());
+            }
+        });
         telNumber = (TextView) findViewById(R.id.telNumberView);
         smsText = (EditText) findViewById(R.id.smsText);
         sendButton = (Button) findViewById(R.id.sendButton);
@@ -74,6 +84,10 @@ public class MessageActivity extends AppCompatActivity {
         System.out.println("SENDING MESSAGE: " + phoneNumber + " " + message);
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, null, null);
+    }
+
+    public void dialNumber(String number){
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, number)));
     }
 
     public String findUserTel(String userName){

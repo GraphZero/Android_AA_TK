@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.AppTheme);
         setContentView(R.layout.activity_home);
         initializeObjects();
         checkAndInitializeFiles();
@@ -103,6 +104,7 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
 
     private void fillCarAdder(){
         if (actualCar != null && !actualCar.equals("undefined")){
+            System.out.println(actualCar);
             carAdder.setVisibility(View.GONE);
         }
         else{
@@ -133,7 +135,7 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
 
     private void welcomeTheUser(){
         userName = (TextView)findViewById(R.id.userName);
-        String welcome = "Witamy, " + user;
+        String welcome = "Welcome, " + user;
         userName.setText(welcome);
         if (actualCar.equals("undefined")){
             carName.setText("Don't have your car here?");

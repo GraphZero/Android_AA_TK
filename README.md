@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 340 pkt
+## Obecne punkty: 360 pkt
 
 ## Do Zrobienia:
 
@@ -35,7 +35,7 @@ f) inne 20pkt
 a) video 10pkt  
 ~~b) muzyki 10pkt~~  
 ~~17. Wykorzystanie sms'ów 20pkt~~  
-18. Nawiązywanie połączenia telefonicznego 20pkt  
+~~18. Nawiązywanie połączenia telefonicznego 20pkt~~
 19. Obsługa praw dostępu  
 a) do sieci (dla Android 26) 20pkt  
 b) do plików (dla Android 26) 20pkt  
