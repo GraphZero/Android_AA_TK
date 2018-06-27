@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 430 pkt
+## Obecne punkty: 450 pkt
 Projekt został zrobiony przez 2 osoby: Andrzej Adamski, Timur Karimov
 ## Do Zrobienia:
 
@@ -61,6 +61,6 @@ e) ImageView 10pkt
 g) RadioButtons 10pkt  
 h) ScrollView 10pkt  
 ~~i) ViewGrid 20pkt~~  Andrzej Adamski  
-j) ListView 20pkt  
+~~j) ListView 20pkt~~  
 ~~k) Spinner 20pkt~~  Andrzej Adamski  
 l) GridView 20pkt  
