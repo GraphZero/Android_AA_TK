@@ -42,7 +42,7 @@ b) do plików (dla Android 26) 20pkt
 20. Wykorzystanie różnych layout'ów  
 ~~a) LinearLayout 10pkt~~ Andrzej Adamski  
 ~~b) RelativeLayout 10pkt~~ Timur Karimov  
-~~c) FrameLayout 10pkt~~ Andrzej Adamski 
+~~c) FrameLayout 10pkt~~ Andrzej Adamski  
 ~~d) GridLayout 10pkt~~  Andrzej Adamski, Timur Karimov  
 ~~e) TableLayout 10pkt~~  Andrzej Adamski  
 ~~f) ConstraintLayout 10pkt~~  Andrzej Adamski, Timur Karimov  
