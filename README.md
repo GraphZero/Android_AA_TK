@@ -1,7 +1,6 @@
 # Android_AA_TK
 
 ## Obecne punkty: 400 pkt
-=======  
 Projekt został zrobiony przez 2 osoby: Andrzej Adamski, Timur Karimov
 ## Do Zrobienia:
 
@@ -50,15 +49,12 @@ c) FrameLayout 10pkt
 ~~21. Implementacja Listenerów (3 różne podejścia) 30 pkt.~~ Timur Karimov, Andrzej Adamski  
 22. ~~Wykorzystanie DataAdpater'a (ListView, ListView, Spinner, GridView) 40 pkt.~~  Andrzej Adamski  
 23. Widżety  
-<<<<<<< HEAD
-~~a) Buttons 10pkt~~  Timur Karimov, Andrzej Adamski
-~~b) TextView/TextEdit 10pkt~~  Andrzej Adamski, Timur Karimov
-~~c) AutoCompleteTextView 20pkt~~ Timur Karimov
-=======
+~~a) Buttons 10pkt~~  Timur Karimov, Andrzej Adamski  
+~~b) TextView/TextEdit 10pkt~~  Andrzej Adamski, Timur Karimov  
+~~c) AutoCompleteTextView 20pkt~~ Timur Karimov  
 ~~a) Buttons 10pkt~~  Timur Karimov, Andrzej Adamski  
 ~~b) TextView/TextEdit 10pkt~~  Andrzej Adamski, Timur Karimov  
 c) AutoCompleteTextView 20pkt  
->>>>>>> 59d649284d4832b47b250bf7df55371fdf806253
 d) Icons 10pkt  
 e) ImageView 10pkt  
 ~~f) CheckBoxes 10pkt~~  Andrzej Adamski  
