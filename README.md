@@ -6,17 +6,17 @@ Projekt został zrobiony przez 2 osoby: Andrzej Adamski, Timur Karimov
 
 
 1. Prawidłowe obsłużenie cyklu życia, aplikacji, 20pkt  
-2. ~~Implementacja kilku aktywności, 20pkt~~Andrzej Adamski, Timur Karimov  MainActivity, ChooseUserActivity, MessageActivity,
+2. ~~Implementacja kilku aktywności, 20pkt~~ Andrzej Adamski, Timur Karimov  MainActivity, ChooseUserActivity, MessageActivity,
 QuotesCheckerActivity, CarInputActivity, HomeActivity  
 3. ~~Wykorzystanie Shared Preferences, 10pkt~~ Andrzej Adamski  MainActivity.java,  
 4. Zmiana orientacji urządzenia, 10pkt  
 5. Aplikacja dla różnych rozdzielczości, 10pkt  
-~~6. Wykorzystanie fragmentów 20pkt~~Timur Karimov MyFragment.java  
+~~6. Wykorzystanie fragmentów 20pkt~~ Timur Karimov MyFragment.java  
 7. Pliki  
-~~a) w pamięci urządzenia, 10pkt~~Timur Karimov  ChooseUserActivity.java (lines 21-46), HomeActivity.java (lines 179-194)  
+~~a) w pamięci urządzenia, 10pkt~~ Timur Karimov  ChooseUserActivity.java (lines 21-46), HomeActivity.java (lines 179-194)  
 b) w pamięci urządzenia z dostępem dla wielu różnych aplikacji (provider) 20pkt  
-~~c) z pamięci zewnętrznej (karta SD) 20pkt~~Timur Karimov XMLHelper.java (lines 49-66),MessageActivity (lines 102-107)  
-~~8. Dostęp do bazy danych (sqlite), 20pkt~~Andrzej Adamski  User.java, UserDao.java, DatabaseLoginService.java  
+~~c) z pamięci zewnętrznej (karta SD) 20pkt~~ Timur Karimov XMLHelper.java (lines 49-66),MessageActivity (lines 102-107)  
+~~8. Dostęp do bazy danych (sqlite), 20pkt~~ Andrzej Adamski  User.java, UserDao.java, DatabaseLoginService.java  
 9. Dostęp do serwisów web  
 ~~a) za pomocą technologii REST 20pkt~~ Andrzej Adamski QuotesCheckerService.java, QuotesRESTService.java  
 b) Dostęp do serwisów web za pomocą technologii SOAP 30pkt  
