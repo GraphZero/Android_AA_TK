@@ -41,7 +41,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".ChooseUserActivity"></activity>
+        <activity android:name=".ChooseUserActivity" />
+        <activity android:name=".gallery.GalleryActivity"></activity>
     </application>
 
 </manifest>

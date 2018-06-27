@@ -18,6 +18,7 @@ import com.aatk.pmanager.MessageActivity;
 import com.aatk.pmanager.R;
 import com.aatk.pmanager.accounts.repository.UserDao;
 import com.aatk.pmanager.db.MyFragment;
+import com.aatk.pmanager.gallery.GalleryActivity;
 import com.aatk.pmanager.quotes.QuotesCheckerActivity;
 import com.aatk.pmanager.db.Users;
 import com.aatk.pmanager.service.MusicService;
@@ -40,6 +41,7 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
     private Button carAdder;
     private Button carCheckerButton;
     private Button ownersContact;
+    private Button catsButton;
     private CheckBox musicCheckBox;
     private TextView userName;
     private TextView carName;
@@ -88,6 +90,16 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
                 manageMusic(b);
             }
         });
+
+        catsButton = findViewById(R.id.button2);
+
+        catsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startCatsActivity();
+            }
+        });
+
         fillCarAdder();
         insertUsers();
         initializeCarCheckerButton();
@@ -99,6 +111,11 @@ public class HomeActivity extends AppCompatActivity implements MyFragment.Callba
 
     public void changeActivity(View v){
         Intent intent = new Intent(HomeActivity.this, QuotesCheckerActivity.class);
+        startActivity(intent);
+    }
+
+    public void startCatsActivity(){
+        Intent intent = new Intent(HomeActivity.this, GalleryActivity.class);
         startActivity(intent);
     }
 
