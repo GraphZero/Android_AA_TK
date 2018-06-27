@@ -4,22 +4,22 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsManager;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.aatk.pmanager.main.HomeActivity;
 import com.aatk.pmanager.service.XMLHelper;
 
 import java.io.File;
+import java.util.List;
 
 public class MessageActivity extends AppCompatActivity {
     private EditText userNameToWrite;
@@ -27,6 +27,7 @@ public class MessageActivity extends AppCompatActivity {
     private EditText smsText;
     private Button sendButton;
     private Button callButton;
+    private Button chooseUserButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class MessageActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         initializeObjects();
-        letHimWrite();
+        userNameToWrite.setText(getIntent().getStringExtra("username"));
     }
 
     private void initializeObjects(){
@@ -78,6 +79,14 @@ public class MessageActivity extends AppCompatActivity {
                 }
             }
         });
+        chooseUserButton = (Button) findViewById(R.id.chooseUserButton);
+        chooseUserButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MessageActivity.this, ChooseUserActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void sendSMS(String phoneNumber, String message) {
@@ -96,9 +105,4 @@ public class MessageActivity extends AppCompatActivity {
         String userInfoLine = XMLHelper.findCarForUser(file, userName);
         return userInfoLine;
     }
-
-    public void letHimWrite(){
-
-    }
-
 }

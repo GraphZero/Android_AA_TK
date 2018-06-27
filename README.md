@@ -1,6 +1,6 @@
 # Android_AA_TK
 
-## Obecne punkty: 370 pkt
+## Obecne punkty: 400 pkt
 Projekt został zrobiony przez 2 osoby: Andrzej Adamski, Timur Karimov
 ## Do Zrobienia:
 
@@ -51,7 +51,7 @@ f) ConstraintLayout 10pkt
 23. Widżety  
 ~~a) Buttons 10pkt~~  Timur Karimov, Andrzej Adamski
 ~~b) TextView/TextEdit 10pkt~~  Andrzej Adamski, Timur Karimov
-c) AutoCompleteTextView 20pkt  
+~~c) AutoCompleteTextView 20pkt~~ Timur Karimov
 d) Icons 10pkt  
 e) ImageView 10pkt  
 ~~f) CheckBoxes 10pkt~~  Andrzej Adamski
