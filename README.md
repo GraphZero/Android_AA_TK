@@ -1,7 +1,7 @@
 # Android_AA_TK
 
 ## Obecne punkty: 400 pkt
-=======
+=======  
 Projekt został zrobiony przez 2 osoby: Andrzej Adamski, Timur Karimov
 ## Do Zrobienia:
 
