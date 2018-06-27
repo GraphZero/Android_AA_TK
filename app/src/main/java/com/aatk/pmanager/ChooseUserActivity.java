@@ -28,6 +28,7 @@ public class ChooseUserActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ChooseUserActivity.this, MessageActivity.class);
                 intent.putExtra("username", userName);
+
                 startActivity(intent);
             }
         });

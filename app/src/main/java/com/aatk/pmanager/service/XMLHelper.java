@@ -27,6 +27,7 @@ public class XMLHelper {
         DocumentBuilder documentBuilder = null;
         Document doc = null;
         try {
+
             documentBuilder = documentBuilderFactory.newDocumentBuilder();
             doc = documentBuilder.parse(new File(internalStorageCarFile));
             doc.getDocumentElement().normalize();
