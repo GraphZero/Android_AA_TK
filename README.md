@@ -61,6 +61,6 @@ e) ImageView 10pkt
 g) RadioButtons 10pkt  
 h) ScrollView 10pkt  
 ~~i) ViewGrid 20pkt~~  Andrzej Adamski  
-~~j) ListView 20pkt~~  
+~~j) ListView 20pkt~~  Andrzej Adamski
 ~~k) Spinner 20pkt~~  Andrzej Adamski  
 l) GridView 20pkt  
